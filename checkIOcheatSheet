@@ -1,3 +1,6 @@
+# Declare multple variables in one line:
+a, b = 1, 2
+
 # Reverse A String
 def backward_string(val: str) -> str:
     # your code here
