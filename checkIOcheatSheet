@@ -1,0 +1,17 @@
+# Reverse A String
+def backward_string(val: str) -> str:
+    # your code here
+    # while not end of string, add to result
+    i = len(val)-1
+    #print(i)
+    result = ""
+    while(i >= 0):
+        result += val[i]
+        i-= 1
+    return result
+
+# quicker way using slicing (called negative step)
+def backward_string(val: str) -> str:
+    # your code here
+    # while not end of string, add to result
+    return val[::-1]
