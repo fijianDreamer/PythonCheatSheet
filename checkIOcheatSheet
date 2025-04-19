@@ -15,6 +15,21 @@ def backward_string(val: str) -> str:
 
 # quicker way using slicing (called negative step)
 def backward_string(val: str) -> str:
-    # your code here
     # while not end of string, add to result
     return val[::-1]
+
+==============================================
+# How to traverse a string using a for loop
+# Problem: Traverse a string & count the number of vowels in it
+==============================================
+def count_vowels(text: str) -> int:
+    vowels = 'aeiouAEIOU'
+    count = 0
+
+    # loop through the text. If it's a vowel, add to count
+    for letter in text:
+        if letter in vowels:
+            count += 1
+    
+    # return count
+    return count
