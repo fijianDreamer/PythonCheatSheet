@@ -33,3 +33,11 @@ def count_vowels(text: str) -> int:
     
     # return count
     return count
+
+# Strings are immutable. To Add to a string:
+result = ""
+result += addToString
+
+# Lists use append
+result = ["a", "b"]
+result.append("addToResult")
