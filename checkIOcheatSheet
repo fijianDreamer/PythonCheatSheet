@@ -18,6 +18,10 @@ def backward_string(val: str) -> str:
     # while not end of string, add to result
     return val[::-1]
 
+# use str() to convert a number into string to modify it
+a = 12
+a = str(a)
+print(a)
 ==============================================
 # How to traverse a string using a for loop
 # Problem: Traverse a string & count the number of vowels in it
