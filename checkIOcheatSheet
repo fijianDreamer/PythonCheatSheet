@@ -41,3 +41,18 @@ result += addToString
 # Lists use append
 result = ["a", "b"]
 result.append("addToResult")
+
+==============================================
+# How to use .find() -> .find() returns the starting index of string, or -1 if not found
+# Problem: In a given string you need to check if one symbol goes right after another. If so - return True, otherwise - False. If one of 
+#          the symbols is not in the given word - your function should return False. If two seeking symbols are the same - your function 
+$          should return False.
+==============================================
+def goes_after(word: str, first: str, second: str) -> bool:
+    # if one of the letters isn't found, return false
+    if word.find(second) == -1 or word.find(first) == -1:
+        return False
+    # if second letter is not rights after (index + 1) first letter, it is false, else return true
+    if word.find(second) == (word.find(first) + 1):
+        return True
+    return False
